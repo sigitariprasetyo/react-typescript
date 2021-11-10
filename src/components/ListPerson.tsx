@@ -1,9 +1,8 @@
 // Props with type Array of object
+import { Name } from "./Person.types"
+
 type ListPersonProps = {
-  persons: {
-    first: string
-    last: string
-  }[]
+  persons: Name[]
 }
 
 
