@@ -8,6 +8,7 @@ import { ListPerson } from './components/ListPerson';
 import { Oscar } from './components/Oscar';
 import { Person } from './components/Person';
 import { Status } from './components/Status';
+import { Container } from './components/Container';
 
 function App() {
   const [value, setValue] = useState("")
@@ -42,6 +43,7 @@ function App() {
       </Oscar>
       <Input value={value} onChange={event => [setValue(event.target.value), console.log(event.target.value)]} />
       <Button handleClick={(event, id) => console.log(event, id)} />
+      <Container styles={{ margin: '1rem', border: '1px solid white', padding: '1rem' }} />
     </div>
   );
 }
