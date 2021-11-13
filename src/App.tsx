@@ -11,6 +11,7 @@ import { Status } from './components/Status';
 import { Container } from './components/Container';
 import { Login } from './components/useState/Login';
 import { User } from './components/useState/User';
+import { Counter } from './components/useReducer/Counter';
 
 function App() {
   const [value, setValue] = useState("")
@@ -48,6 +49,7 @@ function App() {
       <Container styles={{ margin: '1rem', border: '1px solid white', padding: '1rem' }} />
       <Login />
       <User />
+      <Counter />
     </div>
   );
 }
