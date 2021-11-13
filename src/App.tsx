@@ -9,6 +9,8 @@ import { Oscar } from './components/Oscar';
 import { Person } from './components/Person';
 import { Status } from './components/Status';
 import { Container } from './components/Container';
+import { Login } from './components/useState/Login';
+import { User } from './components/useState/User';
 
 function App() {
   const [value, setValue] = useState("")
@@ -44,6 +46,8 @@ function App() {
       <Input value={value} onChange={event => [setValue(event.target.value), console.log(event.target.value)]} />
       <Button handleClick={(event, id) => console.log(event, id)} />
       <Container styles={{ margin: '1rem', border: '1px solid white', padding: '1rem' }} />
+      <Login />
+      <User />
     </div>
   );
 }
