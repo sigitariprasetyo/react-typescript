@@ -14,6 +14,8 @@ import { User } from './components/useState/User';
 import { Counter } from './components/useReducer/Counter';
 import { ThemeContexProvider } from './components/contex/ThemeContex';
 import { Box } from './components/contex/Box';
+import { UserContexProvider } from './components/contex/UserContex';
+import { User1 } from './components/contex/User1';
 
 function App() {
   const [value, setValue] = useState("")
@@ -55,6 +57,9 @@ function App() {
       <ThemeContexProvider>
         <Box />
       </ThemeContexProvider>
+      <UserContexProvider>
+        <User1 />
+      </UserContexProvider>
     </div>
   );
 }
